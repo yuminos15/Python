@@ -17,14 +17,6 @@ def print_map(game_map):
     print(game_map[6] + '|' + game_map[7] + '|' + game_map[8])
     print('-----')
 
-def solutions(t, e, m):
-
-    if game_map[t] == a and game_map[e] == a and game_map[m] == a:
-        print("O has won")
-    if game_map[t] == b and game_map[e] == b and game_map[m] == b:
-        print("X has won")
-    return game_map
-
 
 game_map = make_map()
 print_map(game_map)
