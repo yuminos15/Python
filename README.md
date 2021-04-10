@@ -1,1 +1,1 @@
-TicTacToe Project.
+TicTacToe Python Project.
