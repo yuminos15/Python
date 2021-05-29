@@ -1,0 +1,6 @@
+a = [  ,, , ,, ]
+b = ?
+
+for i in range((len((a))
+  if b > a[i]
+    b = a[i[
