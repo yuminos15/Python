@@ -1,0 +1,147 @@
+print("Hello World")
+print("Mary's cosmetics")
+print('신씨가 소리질렀다. "도둑이야".')
+print('"C:\\Windows"')
+print("안녕하세요.\n만나서\t\t반갑습니다.")
+print("오늘은", "일요일")
+print("naver;kakao;sk;samsung")
+print("naver/kakao/sk/samsung")
+print("first", end=" "); print("second")
+print(5/3)
+smasungjunja = 50000
+print(smasungjunja*10)
+sigachongak = 298000000000000
+hyenjaega = 50000
+per = 15.79
+#=====================================
+s = "hello"
+t = "python"
+print(s, end="");print("!",t)
+print(s + "! " + t)
+print("{}! {}".format(s, t))
+print(f"{s}! {t}")
+
+#8
+a = "132"
+print(type(a))
+#== == == == = == = = == =  == = == = ==== ==
+num_str = "720"
+num = int(num_str)
+print(type(num_str), type(num))
+
+num = 100
+num_str = str(num)
+print(type(num), type(num_str))
+
+rear_str = "15.79"
+rear = float(rear_str)
+print(type(rear_str), type(rear))
+
+
+year = "2021"
+year = int(year)
+print(year - 2)
+print(year - 1)
+print(year)
+
+air = 48584
+month = 36
+print(air*month)
+
+#21
+letters = "python"
+print(letters[0], letters[2])
+
+#22
+license_plate = "24 가 2210"
+print(license_plate[5:9])
+#[시작 인덱스 : 끝 인덱스]
+
+#23
+string = "홀짝홀짝홀짝"
+print(string[0:5:2])
+print(string[::2])
+#[시작 인덱스 : 끝 인덱스 : 오프셋]
+
+#24
+string = "PYTHON"
+print(string[::-1])
+#역순 출력은 마지막 오프셋만 입멱
+
+#25
+phone_number = "010-1111-2222"
+print(phone_number.replace("-", " "))
+
+#26
+print(phone_number.replace("-", ""))
+
+#27
+url = "https://sharebook.kr"
+splitted = url.split(".")
+print(splitted[1])
+
+#28
+lang = "python"
+#lang[0] = "P"
+lang = list(lang)
+lang[0] = 'P'
+lang = ''.join(lang)
+print(lang)
+
+#29
+string = 'abcdfe2a354a32a'
+print(string.replace("a", "A"))
+
+#30
+string = 'abcd'
+result = string.replace('b', 'B')
+print(result)
+
+#31
+a = "3"
+b = "4"
+print(a + b)
+
+#32
+print("Hi"*3)
+
+#33
+print("-"*80)
+
+#34
+t1 = 'python'
+t2 = 'java'
+print((t1 + " " + t2 + " ")*4)
+
+#35
+name1 = "김민우"
+age1 = 10
+name2 = "이철희"
+age2 = 13
+print("이름:", name1, "나이:" , age1)
+print("이름:", name2, "나이:" , age2)
+
+#36
+print("이름: {} 나이: {}".format(name1, age1))
+print("이름: {} 나이: {}".format(name2, age2))
+
+#37
+print(f"이름: {name1} 나이: {age1}")
+print(f"이름: {name2} 나이: {age2}")
+
+#38
+상장주식수 = "5,969,782,550"
+상장주식수 = 상장주식수.replace(",", "")
+상장주식수 = int(상장주식수)
+
+#39
+분기 = "2020/03(E) (IRFS연결)"
+print(분기[:7])
+# [시작 인덱스 : 시작 인덱스 + 1(끝 인덱스)]
+
+#40
+data = "    삼성 전자   "
+print(data.replace(" ", ""))
+print(data.strip())
+print(data.lstrip())
+print(data.rstrip())
