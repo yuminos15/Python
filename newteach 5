@@ -1,0 +1,67 @@
+#key, value
+
+temp = {}
+
+temp = {'a':123, 123 : 'c', 'a' : 123123123123}
+#add dictionary value
+temp['b'] = 123
+
+print(temp)
+
+
+
+#85
+temp = {'melona':1000, 'polapo' : 1200, 'bbang' : 1800}
+temp['d'] = 1200
+temp['e'] = 1500
+print(temp)
+
+#87
+print(temp['melona'])
+
+#88
+temp['melona'] = 1300
+print(temp)
+
+#89
+del temp['melona']
+print(temp)
+
+#91
+
+inventory = {'melona': [300, 20], 'bibibik': [400,3], 'jaws': [250, 100]}
+
+#92
+print(inventory['melona'][1])
+
+#94
+inventory['world'] = [500, 70]
+print(inventory)
+
+#95
+icecream = {'tank':1200, 'polapo':1200, 'bbang':1000, 'world':1500, 'melona':1000}
+print(list(icecream.keys()))
+values = list(icecream.values())
+print(values)
+
+total_cost = 0
+for value in values:
+    total_cost += value
+print("total cost : {}".format(total_cost))
+    
+#icecream.update(new_product)
+#print(icecream)
+
+temp = ('a', 'b', 'c')
+test = (1, 2, 3)
+
+output = zip(temp, test)
+
+print(list(output))
+#100
+date = ['09/05', '09/06', '09/07', '09/08', '09/09']
+
+close_price = [10500, 10300, 10100, 10800, 11000]
+output = zip(date, close_price)
+
+print(dict(output))
