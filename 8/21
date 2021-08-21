@@ -1,0 +1,79 @@
+#281
+class cha:
+    #생성자 (Constructor)
+    def __init__(self, baquie, gagerk):
+        self.baquie = baquie
+        self.gagerk = gagerk
+        
+        
+'''car = cha(2, 1000)
+print(car.baquie)
+print(car.gagerk)
+
+#282
+class 자전차(cha):
+    
+    def __init__(self, baquie, gagerk, gudong):
+        super().__init__(baquie, gagerk)
+        self.gudong = gudong
+#283
+bicycle = 자전차(2, 100, "시마노")
+print(bicycle.gagerk)
+#284
+print(bicycle.gudong)
+#285
+class 자동차(cha):
+    def __init__(self, )'''
+class 자동차(cha):
+    def 정보(self):
+        print("바퀴수", self.baquie)
+        print("가격", self.gagerk)
+
+class 자전차(cha):
+    
+    def __init__(self, baquie, gagerk, gudong):
+        super().__init__(baquie, gagerk)
+        self.gudong = gudong
+        
+    def 정보(self):
+        print("바퀴수", self.baquie)
+        print("가격", self.gagerk)
+
+        
+bicycle = 자전차(2, 100, '시마노')
+bicycle.정보()
+
+
+++++++++++++++++++++++++++++++++++++
+
+'''def solution(absolutes, signs):
+    answer = 10
+    for i in range(len(signs)):
+        
+        if signs[i]:
+                answer += absolutes[i]
+        else:
+            answer -= absolutes[i]
+            
+    return answer
+    
+    
+def solution(s):
+    if len(s) == 4 or len(s) == 6:
+        if s.isdigit():
+            return True
+            
+    return False
+    
+print(solution("123a"))'''
+
+
+def solution(price, money, count):
+    total = 0
+    for i in range(1, count+1):
+        total += price * 1
+        
+        if money - total < 0:
+            return total - money
+        else:
+            return 0
